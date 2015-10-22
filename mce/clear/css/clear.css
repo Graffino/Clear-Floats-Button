@@ -1,0 +1,13 @@
+.mceClear {
+    display: block;
+    margin: 15px auto 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 96%;
+    height: 16px;
+    background: transparent url(../images/clear-line.png ) repeat-y scroll center center;
+    cursor: default;
+    resize: none;
+    max-width: 100%;
+}
