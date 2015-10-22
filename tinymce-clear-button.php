@@ -17,7 +17,7 @@ Released under the GPL v.2, http://www.gnu.org/copyleft/gpl.html
     GNU General Public License for more details.
 */
 
-function tinymce_clear_addbuttons() {
+function tinymce_clear_addbutton() {
    // Don't bother doing this stuff if the current user lacks permissions
    if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') )
      return;
@@ -27,6 +27,9 @@ function tinymce_clear_addbuttons() {
      add_filter("mce_external_plugins", "add_tinymce_clear_plugin");
      add_filter('mce_buttons', 'register_tinymce_clear_buttons');
    }
+   // Add needed CSS
+   wp_register_style('tinymce_clear_addbutton', plugins_url('/mce/clear/css/clearfix.css', __FILE__), false, '1.0.0', 'all');
+   wp_enqueue_style('tinymce_clear_addbutton');
 }
  
 function register_tinymce_clear_buttons($buttons) {
@@ -41,7 +44,7 @@ function add_tinymce_clear_plugin($plugin_array) {
    return $plugin_array;
 }
  
-add_action('init', 'tinymce_clear_addbuttons');
+add_action('init', 'tinymce_clear_addbutton');
 
 function tinymce_clear_buttons_before_init( $init ) {
     // do not remove empty divs
