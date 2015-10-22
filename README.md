@@ -1,4 +1,4 @@
-# TinyMCE Clear Floats
+# Clear Floats Button
 Contributors: Graffino, Miguel Ibero
 Donate link:
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor

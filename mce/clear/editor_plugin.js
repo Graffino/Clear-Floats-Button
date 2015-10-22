@@ -52,7 +52,7 @@
             // Replace clear with images
             ed.onBeforeSetContent.add(function(ed, o) {
                 o.content = o.content.replace(/<div clear=" *([^" ]+) *"><\/div>/g, clearHTML);
-                o.content = o.content.replace(/<div class="clearfix divider -transparent"><\/div>/g, clearHTML);
+                o.content = o.content.replace(/<div class="clearfix divider"><\/div>/g, clearHTML);
             });
 
             // Replace images with clear

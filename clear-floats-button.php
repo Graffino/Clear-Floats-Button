@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: TinyMCE Clear Floats
-Plugin URI: http://graffino.com
-Description: Adds a TinyMCE clear button
+Plugin Name: Clear Floats Button
+Plugin URI: https://github.com/Graffino/clear-floats-button
+Description: Adds a clear floats button to TinyMCE
 Version: 1.0
 Author: Graffino
 Author URI: http://graffino.com
@@ -17,39 +17,44 @@ Released under the GPL v.2, http://www.gnu.org/copyleft/gpl.html
     GNU General Public License for more details.
 */
 
-function tinymce_clear_addbutton() {
+function clear_floats_addbutton() {
    // Don't bother doing this stuff if the current user lacks permissions
    if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') )
      return;
  
    // Add only in Rich Editor mode
    if ( get_user_option('rich_editing') == 'true') {
-     add_filter("mce_external_plugins", "add_tinymce_clear_plugin");
-     add_filter('mce_buttons', 'register_tinymce_clear_buttons');
+     add_filter("mce_external_plugins", "add_clear_floats_plugin");
+     add_filter('mce_buttons', 'register_clear_floats');
    }
    // Add needed CSS
-   wp_register_style('tinymce_clear_addbutton', plugins_url('/mce/clear/css/clearfix.css', __FILE__), false, '1.0.0', 'all');
-   wp_enqueue_style('tinymce_clear_addbutton');
+   wp_register_style('clear_floats_addbutton', plugins_url('/mce/clear/css/clearfix.css', __FILE__), false, '1.0.0', 'all');
+   wp_enqueue_style('clear_floats_addbutton');
 }
  
-function register_tinymce_clear_buttons($buttons) {
+function register_clear_floats($buttons) {
    array_push($buttons, "separator", "clearboth");
    return $buttons;
 }
  
 // Load the TinyMCE plugin : editor_plugin.js (wp2.5)
-function add_tinymce_clear_plugin($plugin_array) {
+function add_clear_floats_plugin($plugin_array) {
   $plugin_name = preg_replace('/\.php/','',basename(__FILE__));
   $plugin_array['clear'] = WP_PLUGIN_URL .'/'.$plugin_name.'/mce/clear/editor_plugin.js';
    return $plugin_array;
 }
  
-add_action('init', 'tinymce_clear_addbutton');
+add_action('init', 'clear_floats_addbutton');
 
-function tinymce_clear_buttons_before_init( $init ) {
+function clear_floats_before_init($init) {
     // do not remove empty divs
-    $init['extended_valid_elements'] .= ',div[clear|style|class]';
+    if (!isset($init)) {
+        $init['extended_valid_elements'] = '';
+    } else {
+        $init['extended_valid_elements'] = ',';
+    }
+    $init['extended_valid_elements'] = 'div[clear|style|class]';
     return $init;
 }
 
-add_filter('tiny_mce_before_init', 'tinymce_clear_buttons_before_init');
+add_filter('tiny_mce_before_init', 'clear_floats_before_init');
