@@ -18,15 +18,14 @@
                 cmd : 'clearBoth',
                 image : url + '/images/clear.png'
             });
+            var clearHTML = '<img src="' + url + '/images/transparent.gif" style="clear: both;" class="mceClear mceClearboth mceItemNoResize" title="Clear" />';
 
-            var clearHTML = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="clearfix mceClear mceItemNoResize" title="Clear" />';
-            var insertClear = function(clear){
-                var html = clearHTML.replace(/\$1/g, clear);
+            var insertClear = function(){
+                var html = clearHTML;
                 ed.execCommand('mceInsertContent', false, html);
-                // ed.selection.setContent('');
             };
 
-            ed.addCommand('clearBoth', function(){ insertClear('both'); });
+            ed.addCommand('clearBoth', function(){ insertClear(); });
 
             // Set active buttons if user selected pagebreak or more break
             ed.onNodeChange.add(function(ed, cm, n) {
@@ -62,7 +61,7 @@
                     o.content = o.content.replace(/<img[^>]+>/g, function(html) {
                         if (html.indexOf('class="mceClear') !== -1) {
                             var m, clear = (m = html.match(/mceClear([a-z]+)/)) ? m[1] : '';
-                            html = '<div class="clearfix divider -transparent"></div>';
+                            html = '<div class="clearfix divider"></div>';
                         }
                         return html;
                     });
