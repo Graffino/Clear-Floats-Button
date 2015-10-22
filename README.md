@@ -27,7 +27,7 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 - Removed clear:left and clear:right buttons
 - Changed plugin so we don't have inline styles.
 
-## Frequently Asked Questions ==
+## Frequently Asked Questions
 
 1. Why do you need to clear the floats?
 Well, sometimes you want to add two floating images but don't want them to overlap. Or you want to add an image floated to the left and text on the right, and then add a new block. You can add a clear in
@@ -35,5 +35,5 @@ the middle to achieve the desired effect.
 
 ## Screenshots
 
-1. The added clea button
+1. The added clear button
 2. The html block
