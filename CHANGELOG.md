@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.2
+- Updated assets for WP Plugin Directory
+
 ### 1.0.1
 - Fixed stripping of IDs on DIVs - Extended valid elements fix (https://github.com/Graffino/Clear-Floats-Button/issues/1)
 

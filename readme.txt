@@ -3,7 +3,7 @@ Contributors: Graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.3.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Changelog ==
 
+= 1.0.2 =
+- Updated assets for WP Plugin Directory
+
 = 1.0.1 =
 - Fixed stripping of IDs on DIVs [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
 
@@ -47,6 +50,9 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 - Changed plugin so we don't have inline styles.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Updated assets for WP Plugin Directory
 
 = 1.0.1 =
 Fixed stripping of IDs on DIVs [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
