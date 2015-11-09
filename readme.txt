@@ -1,9 +1,9 @@
 === Clear Floats Button ===
-Contributors: Graffino, Miguel Ibero
+Contributors: Graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.3.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,9 +22,25 @@ Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons
 3. Upload to the plugins directory (wp-content/plugins).
 4. Activate the plugin.
 
+== Frequently Asked Questions ==
+
+1. Why do you need to clear the floats?
+Well, sometimes you want to add two floating images but don't want them to overlap. Or you want to add an image floated to the left and text on the right, and then add a new block. You can add a clear in
+the middle to achieve the desired effect.
+2. How do I report an issue with this plugin?
+Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clear-Floats-Button/issues/new)
+
+== Screenshots ==
+
+1. Visual Editor Bar Button
+2. Visual Editor Sample
+
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+- Fixed stripping of IDs on DIVs [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
+
+= 1.0.0 =
 - Created new version from [stale plugin](https://wordpress.org/plugins/tinymce-clear-buttons/)
 - Revamped graphic assets
 - Removed clear:left and clear:right buttons
@@ -32,16 +48,8 @@ Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons
 
 == Upgrade Notice ==
 
-= 1.0 =
-- Initial version.
+= 1.0.1 =
+Fixed stripping of IDs on DIVs [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
 
-== Frequently Asked Questions ==
-
-1. Why do you need to clear the floats?
-Well, sometimes you want to add two floating images but don't want them to overlap. Or you want to add an image floated to the left and text on the right, and then add a new block. You can add a clear in
-the middle to achieve the desired effect.
-
-== Screenshots ==
-
-1. The added clear button
-2. The html block
+= 1.0.0 =
+Initial version.

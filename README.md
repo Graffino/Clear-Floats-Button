@@ -4,7 +4,7 @@ Donate link:
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.3.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 Adds clear float button to TinyMCE Editor. Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons/).
 
@@ -21,7 +21,11 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
-### 1.0
+### 1.0.1
+- Fixed stripping of IDs on DIVs - Extended valid elements fix (https://github.com/Graffino/Clear-Floats-Button/issues/1)
+
+### 1.0.0
+
 - Created new version from [stale plugin](https://wordpress.org/plugins/tinymce-clear-buttons/)
 - Revamped graphic assets
 - Removed clear:left and clear:right buttons
