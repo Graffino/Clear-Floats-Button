@@ -1,10 +1,4 @@
 # Clear Floats Button
-Contributors: Graffino, Miguel Ibero
-Donate link:
-Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
-Requires at least: 2.9
-Tested up to: 4.3.1
-Stable tag: 1.0.2
 
 Adds clear float button to TinyMCE Editor. Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons/).
 
@@ -21,11 +15,17 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.0.4
+- Fixes not loading CSS when user is not logged-in [Issue #2](https://github.com/Graffino/Clear-Floats-Button/issues/1)
+
+### 1.0.3
+- Updated assets for WP Plugin Directory (2)
+
 ### 1.0.2
 - Updated assets for WP Plugin Directory
 
 ### 1.0.1
-- Fixed stripping of IDs on DIVs - Extended valid elements fix (https://github.com/Graffino/Clear-Floats-Button/issues/1)
+- Fixed stripping of IDs on DIVs - Extended valid elements fix [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
 
 ### 1.0.0
 
@@ -39,8 +39,3 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 1. Why do you need to clear the floats?
 Well, sometimes you want to add two floating images but don't want them to overlap. Or you want to add an image floated to the left and text on the right, and then add a new block. You can add a clear in
 the middle to achieve the desired effect.
-
-## Screenshots
-
-1. The added clear button
-2. The html block

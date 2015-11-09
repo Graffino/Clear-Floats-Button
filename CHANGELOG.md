@@ -1,5 +1,11 @@
 ## Changelog
 
+### 1.0.4
+- Fixes not loading CSS when user is not logged-in [Issue #2](https://github.com/Graffino/Clear-Floats-Button/issues/1)
+
+### 1.0.3
+- Updated assets for WP Plugin Directory (2)
+
 ### 1.0.2
 - Updated assets for WP Plugin Directory
 
