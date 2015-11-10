@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.5
+- Fixed stripping of IDs on DIVs - Extended valid elements fix for cases in which extended elements are not defined [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
+
 ### 1.0.4
 - Fixes not loading CSS when user is not logged-in [Issue #2](https://github.com/Graffino/Clear-Floats-Button/issues/1)
 
