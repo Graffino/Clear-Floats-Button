@@ -26,7 +26,7 @@ function add_clear_floats_plugin( $plugin_array ) {
 }
 // Register button
 function register_clear_floats( $buttons ) {
-    array_push($buttons, "separator", "clearboth");
+    array_push($buttons, 'separator', 'clearboth');
     return $buttons;
 }
 
@@ -34,7 +34,7 @@ function register_clear_floats( $buttons ) {
 function clear_floats_addbutton() {
     // Add only in Rich Editor mode
     if ( get_user_option('rich_editing') == 'true') {
-        add_filter("mce_external_plugins", "add_clear_floats_plugin");
+        add_filter('mce_external_plugins', 'add_clear_floats_plugin');
         add_filter('mce_buttons', 'register_clear_floats');
     }
     
