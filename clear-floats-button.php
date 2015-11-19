@@ -3,7 +3,7 @@
 Plugin Name: Clear Floats Button
 Plugin URI: https://github.com/Graffino/clear-floats-button
 Description: Adds a clear floats button to TinyMCE
-Version: 1.0.5
+Version: 1.0.6
 Author: Graffino
 Author URI: http://graffino.com
 
@@ -39,7 +39,7 @@ function clear_floats_addbutton() {
     }
     
     // Enqueue needed CSS
-    wp_register_style('clear_floats_addbutton', plugins_url('/mce/clear/css/clearfix.css', __FILE__), false, '1.0.5', 'all');
+    wp_register_style('clear_floats_addbutton', plugins_url('/mce/clear/css/clearfix.css', __FILE__), false, '1.0.6', 'all');
     wp_enqueue_style('clear_floats_addbutton');
 }
 add_action('init', 'clear_floats_addbutton');
