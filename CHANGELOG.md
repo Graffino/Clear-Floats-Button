@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.6
+- Compatibility with future version of WP
+
 ### 1.0.5
 - Fixed stripping of IDs on DIVs - Extended valid elements fix for cases in which extended elements are not defined [Issue #1](https://github.com/Graffino/Clear-Floats-Button/issues/1)
 
