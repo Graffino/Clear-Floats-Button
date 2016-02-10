@@ -3,7 +3,7 @@ Contributors: graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.4
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,9 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Changelog ==
 
+= 1.0.7
+- Fixed miss interpretation of TinyMCE api regarding custom_elements. This prevented the plugin from working in IE [Issue #3](https://github.com/Graffino/Clear-Floats-Button/issues/3)
+
 = 1.0.6 =
 - Compatibility with future version of WP
 
@@ -62,6 +65,9 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 - Changed plugin so we don't have inline styles.
 
 == Upgrade Notice ==
+
+= 1.0.7 =
+Fixes an issue that prevented the plugin from working in Internet Explorer.
 
 = 1.0.5 =
 Fixes issues for users that use DIV IDs in their editor.
