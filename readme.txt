@@ -37,7 +37,7 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Changelog ==
 
-= 1.0.7
+= 1.0.7 =
 - Fixed miss interpretation of TinyMCE api regarding custom_elements. This prevented the plugin from working in IE [Issue #3](https://github.com/Graffino/Clear-Floats-Button/issues/3)
 
 = 1.0.6 =
