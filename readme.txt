@@ -3,7 +3,7 @@ Contributors: graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.6
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,10 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 2. Visual Editor Sample
 
 == Changelog ==
+
+= 1.0.9 =
+- This ensures that such themes will not make the divider appear
+taller than intended.[Issue #3](https://github.com/Graffino/Clear-Floats-Button/pull/4)
 
 = 1.0.8 =
 - Compatibility with future version of WP
