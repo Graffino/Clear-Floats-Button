@@ -1,5 +1,10 @@
 ## Changelog
 
+
+### 1.0.9
+- This ensures that such themes will not make the divider appear
+taller than intended.[Issue #3](https://github.com/Graffino/Clear-Floats-Button/pull/4)
+
 ### 1.0.8
 - Compatibility with future version of WP
 
