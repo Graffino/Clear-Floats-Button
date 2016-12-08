@@ -1,5 +1,7 @@
 ## Changelog
 
+### 1.0.10
+- Compatibility with future version of WP
 
 ### 1.0.9
 - This ensures that such themes will not make the divider appear
