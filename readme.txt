@@ -3,7 +3,7 @@ Contributors: graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.7
-Stable tag: 1.0.10
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,13 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 2. Visual Editor Sample
 
 == Changelog ==
+
+
+= 1.1.0 =
+- Changed to inline styling. Fixes [Issue #7](https://github.com/Graffino/Clear-Floats-Button/issues/7), [Issue #5](https://github.com/Graffino/Clear-Floats-Button/issues/5)
+- Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
+- New icon to better represent clearing of floats.
+- Minified assets for performance.
 
 = 1.0.10 =
 - Compatibility with future version of WP
@@ -75,6 +82,9 @@ taller than intended.[Issue #3](https://github.com/Graffino/Clear-Floats-Button/
 - Changed plugin so we don't have inline styles.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Fixes conflicts with certain themes.
 
 = 1.0.7 =
 Fixes an issue that prevented the plugin from working in Internet Explorer.
