@@ -56,7 +56,7 @@
                     e.content = e.content.replace(/<img[^>]+>/g, function(html) {
                         if (html.indexOf('class="mceClear') !== -1) {
                             var m, clear = (m = html.match(/mceClear([a-z]+)/)) ? m[1] : '';
-                            html = '<br style="clear: both;">';
+                            html = '<br style="clear:both;">';
                         }
                         return html;
                     });
