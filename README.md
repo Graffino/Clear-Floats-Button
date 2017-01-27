@@ -20,6 +20,8 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 - Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
 - New icon to better represent clearing of floats.
 - Minified assets for performance.
+- Add 'ctrl/cmd + f' shortcut
+- Removed deprecated functions
 
 ### 1.0.10
 - Compatibility with future version of WP

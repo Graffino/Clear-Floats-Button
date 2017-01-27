@@ -43,6 +43,8 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 - Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
 - New icon to better represent clearing of floats.
 - Minified assets for performance.
+- Add 'ctrl/cmd + f' shortcut
+- Removed deprecated functions
 
 = 1.0.10 =
 - Compatibility with future version of WP

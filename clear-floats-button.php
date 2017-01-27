@@ -50,7 +50,7 @@ function clear_floats_before_init( $options ) {
         $options['extended_valid_elements'] .= ',';
     }
 
-    $options['extended_valid_elements'] .= 'div[clear|class|id|style|title|role]';
+    $options['extended_valid_elements'] .= 'br[clear|class|id|style|title|role]';
 
     return $options;
 }

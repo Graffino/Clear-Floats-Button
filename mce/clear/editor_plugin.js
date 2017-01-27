@@ -14,9 +14,16 @@
         init : function(ed, url) {
 
             ed.addButton('clearboth', {
-                title : 'Clear',
+                title : 'Clear floats (' + ( tinymce.Env.mac ? '\u2303\u2325' : 'Shift+Alt+' ) + 'F' + ')',
                 cmd : 'clearBoth',
-                image : url + '/images/clear.svg'
+                image : url + '/images/clear.svg',
+                onPostRender : function() {
+                    var _this = this;
+                    // Highlight button on Clear element click
+                    ed.on('NodeChange', function(e) {
+                        _this.active(e.element.title == 'Clear');
+                    });
+                }
             });
             var clearHTML = '<img src="' + url + '/images/transparent.gif" style="clear: both;" class="mceClear mceClearboth mceItemNoResize" title="Clear">';
 
@@ -28,46 +35,28 @@
             ed.addCommand('clearBoth', function(){ insertClear(); });
             
             // Add editor shortcut
-            ed.addShortcut('access+f', null, 'clearBoth');
-
-
-            // Set active buttons if user selected pagebreak or more break
-            ed.onNodeChange.add(function(ed, cm, n) {
-                cm.setActive('clearboth', n.nodeName === 'IMG' && ed.dom.hasClass(n, 'mceClearboth'));
-            });
+            ed.addShortcut('ctrl+alt+f', 'Clear floats', 'clearBoth');
 
             // Load plugin specific CSS into editor
-            ed.onInit.add(function() {
+            ed.on('Init', function() {
                 ed.dom.loadCSS(url + '/css/clear.min.css');
             });
 
-            // Display clear instead if img in element path
-            ed.onPostRender.add(function() {
-                if (ed.theme.onResolveName) {
-                    ed.theme.onResolveName.add(function(th, o) {
-                        if (o.node.nodeName == 'IMG') {
-                            if ( ed.dom.hasClass(o.node, 'mceClearboth') )
-                                o.name = 'clear.both';
-                        }
-                    });
-                }
-            });
-
             // Replace clear with images
-            ed.onBeforeSetContent.add(function(ed, o) {
-                o.content = o.content.replace(/<br clear=" *([^" ]+) *">/g, clearHTML);
-                o.content = o.content.replace(/<br style="clear:both;">/g, clearHTML);
+            ed.on('BeforeSetContent', function(e) {
+                e.content = e.content.replace(/<br clear=" *([^" ]+) *">/g, clearHTML);
+                e.content = e.content.replace(/<br style="clear:both;">/g, clearHTML);
                 // Replace old versions of clear-floats
-                o.content = o.content.replace(/<div class="clearfix divider"><\/div>/g, clearHTML);
+                e.content = e.content.replace(/<div class="clearfix divider"><\/div>/g, clearHTML);
             });
 
             // Replace images with clear
-            ed.onPostProcess.add(function(ed, o) {
+            ed.on('PostProcess', function(e) {
                 if (o.get){
-                    o.content = o.content.replace(/<img[^>]+>/g, function(html) {
+                    e.content = e.content.replace(/<img[^>]+>/g, function(html) {
                         if (html.indexOf('class="mceClear') !== -1) {
                             var m, clear = (m = html.match(/mceClear([a-z]+)/)) ? m[1] : '';
-                            html = '<br class="clear-floats" />';
+                            html = '<br style="clear: both;">';
                         }
                         return html;
                     });
@@ -98,7 +87,7 @@
          */
         getInfo : function() {
             return {
-                longname : 'Clear',
+                longname : 'Clear Floats Button',
                 author : 'Graffino',
                 authorurl : 'http://graffino.com',
                 infourl : 'https://wordpress.org/plugins/clear-floats-button/',
