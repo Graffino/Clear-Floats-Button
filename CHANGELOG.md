@@ -7,6 +7,7 @@
 - Minified assets for performance.
 - Add 'ctrl/cmd + f' shortcut
 - Removed deprecated functions
+- Updated assets, icons, background, screenshot
 
 ### 1.0.10
 - Compatibility with future version of WP

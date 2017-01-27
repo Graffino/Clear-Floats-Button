@@ -32,8 +32,7 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Screenshots ==
 
-1. Visual Editor Bar Button
-2. Visual Editor Sample
+1. Plugin in action
 
 == Changelog ==
 
@@ -45,6 +44,7 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 - Minified assets for performance.
 - Add 'ctrl/cmd + f' shortcut
 - Removed deprecated functions
+- Updated assets, icons, background, screenshot
 
 = 1.0.10 =
 - Compatibility with future version of WP

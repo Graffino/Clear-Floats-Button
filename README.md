@@ -22,6 +22,7 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 - Minified assets for performance.
 - Add 'ctrl/cmd + f' shortcut
 - Removed deprecated functions
+- Updated assets, icons, background, screenshot
 
 ### 1.0.10
 - Compatibility with future version of WP
