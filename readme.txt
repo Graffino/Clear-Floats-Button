@@ -37,12 +37,15 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 == Changelog ==
 
 
+= 1.1.1 =
+- Editor not loading due to SVN processing error. Bumping version & correcting documentation. Sorry for that! Fixes [Issue #8](https://github.com/Graffino/Clear-Floats-Button/issues/8), [Issue #9](https://github.com/Graffino/Clear-Floats-Button/issues/9)
+
 = 1.1.0 =
 - Changed to inline styling. Fixes [Issue #7](https://github.com/Graffino/Clear-Floats-Button/issues/7), [Issue #5](https://github.com/Graffino/Clear-Floats-Button/issues/5)
 - Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
 - New icon to better represent clearing of floats.
 - Minified assets for performance.
-- Add 'ctrl/cmd + f' shortcut
+- Add 'ctrl + option/alt + f' shortcut
 - Removed deprecated functions
 - Updated assets, icons, background, screenshot
 
@@ -84,6 +87,9 @@ taller than intended.[Issue #3](https://github.com/Graffino/Clear-Floats-Button/
 - Changed plugin so we don't have inline styles.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+- Fixes an error with the Editor not loading due to a SVN processing error. Sorry for that!
 
 = 1.1.0 =
 Fixes conflicts with certain themes.

@@ -15,12 +15,15 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.1.1
+- Editor not loading due to SVN processing error. Bumping version & correcting documentation. Sorry for that! Fixes [Issue #8](https://github.com/Graffino/Clear-Floats-Button/issues/8), [Issue #9](https://github.com/Graffino/Clear-Floats-Button/issues/9)
+
 ### 1.1.0
 - Changed to inline styling. Fixes [Issue #7](https://github.com/Graffino/Clear-Floats-Button/issues/7), [Issue #5](https://github.com/Graffino/Clear-Floats-Button/issues/5)
 - Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
 - New icon to better represent clearing of floats.
 - Minified assets for performance.
-- Add 'ctrl/cmd + f' shortcut
+- Add 'ctrl + option/alt + f' shortcut
 - Removed deprecated functions
 - Updated assets, icons, background, screenshot
 
