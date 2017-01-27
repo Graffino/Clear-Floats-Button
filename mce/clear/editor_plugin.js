@@ -14,11 +14,18 @@
         init : function(ed, url) {
 
             ed.addButton('clearboth', {
-                title : 'Clear',
+                title : 'Clear floats (' + ( tinymce.Env.mac ? '\u2303\u2325' : 'Shift+Alt+' ) + 'F' + ')',
                 cmd : 'clearBoth',
-                image : url + '/images/clear.png'
+                image : url + '/images/clear.svg',
+                onPostRender : function() {
+                    var _this = this;
+                    // Highlight button on Clear element click
+                    ed.on('NodeChange', function(e) {
+                        _this.active(e.element.title == 'Clear');
+                    });
+                }
             });
-            var clearHTML = '<img src="' + url + '/images/transparent.gif" style="clear: both;" class="mceClear mceClearboth mceItemNoResize" title="Clear" />';
+            var clearHTML = '<img src="' + url + '/images/transparent.gif" style="clear: both;" class="mceClear mceClearboth mceItemNoResize" title="Clear">';
 
             var insertClear = function(){
                 var html = clearHTML;
@@ -26,42 +33,30 @@
             };
 
             ed.addCommand('clearBoth', function(){ insertClear(); });
-
-            // Set active buttons if user selected pagebreak or more break
-            ed.onNodeChange.add(function(ed, cm, n) {
-                cm.setActive('clearboth', n.nodeName === 'IMG' && ed.dom.hasClass(n, 'mceClearboth'));
-            });
+            
+            // Add editor shortcut
+            ed.addShortcut('ctrl+alt+f', 'Clear floats', 'clearBoth');
 
             // Load plugin specific CSS into editor
-            ed.onInit.add(function() {
-                ed.dom.loadCSS(url + '/css/clear.css');
-            });
-
-            // Display clear instead if img in element path
-            ed.onPostRender.add(function() {
-                if (ed.theme.onResolveName) {
-                    ed.theme.onResolveName.add(function(th, o) {
-                        if (o.node.nodeName == 'IMG') {
-                            if ( ed.dom.hasClass(o.node, 'mceClearboth') )
-                                o.name = 'clear.both';
-                        }
-                    });
-                }
+            ed.on('Init', function() {
+                ed.dom.loadCSS(url + '/css/clear.min.css');
             });
 
             // Replace clear with images
-            ed.onBeforeSetContent.add(function(ed, o) {
-                o.content = o.content.replace(/<div clear=" *([^" ]+) *"><\/div>/g, clearHTML);
-                o.content = o.content.replace(/<div class="clearfix divider"><\/div>/g, clearHTML);
+            ed.on('BeforeSetContent', function(e) {
+                e.content = e.content.replace(/<br clear=" *([^" ]+) *">/g, clearHTML);
+                e.content = e.content.replace(/<br style="clear:both;">/g, clearHTML);
+                // Replace old versions of clear-floats
+                e.content = e.content.replace(/<div class="clearfix divider"><\/div>/g, clearHTML);
             });
 
             // Replace images with clear
-            ed.onPostProcess.add(function(ed, o) {
+            ed.on('PostProcess', function(e) {
                 if (o.get){
-                    o.content = o.content.replace(/<img[^>]+>/g, function(html) {
+                    e.content = e.content.replace(/<img[^>]+>/g, function(html) {
                         if (html.indexOf('class="mceClear') !== -1) {
                             var m, clear = (m = html.match(/mceClear([a-z]+)/)) ? m[1] : '';
-                            html = '<div class="clearfix divider"></div>';
+                            html = '<br style="clear:both;">';
                         }
                         return html;
                     });
@@ -92,11 +87,11 @@
          */
         getInfo : function() {
             return {
-                longname : 'Clear',
+                longname : 'Clear Floats Button',
                 author : 'Graffino',
                 authorurl : 'http://graffino.com',
-                infourl : 'http://graffino.com',
-                version : "1.0"
+                infourl : 'https://wordpress.org/plugins/clear-floats-button/',
+                version : "1.1.0"
             };
         }
     });

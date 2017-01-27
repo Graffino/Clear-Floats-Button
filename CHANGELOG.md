@@ -1,5 +1,16 @@
 ## Changelog
 
+### 1.1.0
+- Changed to inline styling. Fixes [Issue #7](https://github.com/Graffino/Clear-Floats-Button/issues/7), [Issue #5](https://github.com/Graffino/Clear-Floats-Button/issues/5)
+- Uses `br` instead of `div`. Fixes [Issue #6](https://github.com/Graffino/Clear-Floats-Button/issues/6)
+- New icon to better represent clearing of floats.
+- Minified assets for performance.
+- Add 'ctrl/cmd + f' shortcut
+- Removed deprecated functions
+- Updated assets, icons, background, screenshot
+
+### 1.0.10
+- Compatibility with future version of WP
 
 ### 1.0.9
 - This ensures that such themes will not make the divider appear
