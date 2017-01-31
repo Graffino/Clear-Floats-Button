@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.1.2
+- Correctly named variable. Fixes [Issue #10](https://github.com/Graffino/Clear-Floats-Button/issues/10)
+
 ### 1.1.1
 - Editor not loading due to SVN processing error. Bumping version & correcting documentation. Sorry for that! Fixes [Issue #8](https://github.com/Graffino/Clear-Floats-Button/issues/8), [Issue #9](https://github.com/Graffino/Clear-Floats-Button/issues/9)
 

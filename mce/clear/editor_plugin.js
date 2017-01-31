@@ -52,7 +52,7 @@
 
             // Replace images with clear
             ed.on('PostProcess', function(e) {
-                if (o.get){
+                if (e.get){
                     e.content = e.content.replace(/<img[^>]+>/g, function(html) {
                         if (html.indexOf('class="mceClear') !== -1) {
                             var m, clear = (m = html.match(/mceClear([a-z]+)/)) ? m[1] : '';
@@ -91,7 +91,7 @@
                 author : 'Graffino',
                 authorurl : 'http://graffino.com',
                 infourl : 'https://wordpress.org/plugins/clear-floats-button/',
-                version : "1.1.1"
+                version : "1.1.2"
             };
         }
     });

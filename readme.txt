@@ -3,7 +3,7 @@ Contributors: graffino
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.7
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,8 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Changelog ==
 
+### 1.1.2
+- Correctly named variable. Fixes [Issue #10](https://github.com/Graffino/Clear-Floats-Button/issues/10)
 
 = 1.1.1 =
 - Editor not loading due to SVN processing error. Bumping version & correcting documentation. Sorry for that! Fixes [Issue #8](https://github.com/Graffino/Clear-Floats-Button/issues/8), [Issue #9](https://github.com/Graffino/Clear-Floats-Button/issues/9)
@@ -87,6 +89,9 @@ taller than intended.[Issue #3](https://github.com/Graffino/Clear-Floats-Button/
 - Changed plugin so we don't have inline styles.
 
 == Upgrade Notice ==
+
+= 1.1.2 =
+- Fixes an error with the Editor not saving when used with photo galleries.
 
 = 1.1.1 =
 - Fixes an error with the Editor not loading due to a SVN processing error. Sorry for that!
