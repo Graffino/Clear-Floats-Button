@@ -36,7 +36,7 @@ Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clea
 
 == Changelog ==
 
-### 1.1.2
+= 1.1.2 =
 - Correctly named variable. Fixes [Issue #10](https://github.com/Graffino/Clear-Floats-Button/issues/10)
 
 = 1.1.1 =
