@@ -1,5 +1,5 @@
 === Clear Floats Button ===
-Contributors: graffino
+Contributors: graffino, zeno.popovici, miguelibero
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.7
