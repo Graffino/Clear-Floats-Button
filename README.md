@@ -15,6 +15,9 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.1.3
+- Cleanup & improved documentation. Added translation tags.
+
 ### 1.1.2
 - Correctly named variable. Fixes [Issue #10](https://github.com/Graffino/Clear-Floats-Button/issues/10)
 

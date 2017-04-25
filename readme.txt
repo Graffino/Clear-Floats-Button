@@ -3,7 +3,7 @@ Contributors: graffino, zeno.popovici, miguelibero
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
 Tested up to: 4.7
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,17 +24,44 @@ Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons
 
 == Frequently Asked Questions ==
 
-1. Why do you need to clear the floats?
+= Why do you need to clear the floats? =
 Well, sometimes you want to add two floating images but don't want them to overlap. Or you want to add an image floated to the left and text on the right, and then add a new block. You can add a clear in
 the middle to achieve the desired effect.
-2. How do I report an issue with this plugin?
-Just head over to GitHub and [open a new issue](https://github.com/Graffino/Clear-Floats-Button/issues/new)
+
+= Where do I get support? =
+Ask your question in the [Support Forums](http://wordpress.org/support/plugin/clear-floats-button). Please note that due to restricted time availability we're not actively answering questions, unless a real bug is reported. See: "What should I try before reporting a bug" section.
+
+= What should I try before reporting a bug? =
+1. Disable all your plugins except "Custom Post Type Maker".
+2. See if the plugin behaves normally with the default Wordpress theme.
+3. Try to run the plugin on a clean Wordpress install.
+
+If all of this fails, see: "How should I report bugs?" section.
+
+= How should I report bugs? =
+Please report your bug on [GitHub](https://github.com/Graffino/Clear-Floats-Button/issues). Issues will not be handled elsewhere.
+
+Make sure you attach to the report:
+1. Your Wordpress version
+2. Your plugin version
+3. Screenshots
+4. Steps to reproduce the problem
+5. Anything else you think would be useful to pinpoint the problem
+
+= How do I request a feature? =
+We're supporting this plugin but not actively developing it. If you're interested to contribute you can submit a PR on [GitHub](https://github.com/Graffino/Clear-Floats-Button/pulls).
+
+= How do I get the plugin in my own language? =
+You'll have to do it yourself. Help [translate this plugin](https://translate.wordpress.org/projects/wp-plugins/clear-floats-button).
 
 == Screenshots ==
 
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.3 = 
+- Cleanup & improved documentation. Added translation tags.
 
 = 1.1.2 =
 - Correctly named variable. Fixes [Issue #10](https://github.com/Graffino/Clear-Floats-Button/issues/10)
