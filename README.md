@@ -15,6 +15,9 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.1.4
+- Fix for undefined variable.
+
 ### 1.1.3
 - Cleanup & improved documentation. Added translation tags.
 
