@@ -2,7 +2,7 @@
 Contributors: graffino, zeno.popovici, miguelibero
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
-Tested up to: 4.7
+Tested up to: 4.8
 Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,7 +64,7 @@ You'll have to do it yourself. Help [translate this plugin](https://translate.wo
 = 1.1.4 =
 - Fix for undefined variable.
 
-= 1.1.3 = 
+= 1.1.3 =
 - Cleanup & improved documentation. Added translation tags.
 
 = 1.1.2 =
