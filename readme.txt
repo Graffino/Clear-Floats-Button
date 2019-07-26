@@ -61,6 +61,9 @@ You'll have to do it yourself. Help [translate this plugin](https://translate.wo
 
 == Changelog ==
 
+= 1.1.5 =
+- Compatibility with future WP version.
+
 = 1.1.4 =
 - Fix for undefined variable.
 
