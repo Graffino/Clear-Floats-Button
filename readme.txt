@@ -2,8 +2,8 @@
 Contributors: graffino, zeno.popovici, miguelibero
 Tags: wysiwyg, formatting, tinymce, edit, float, clear, editor
 Requires at least: 2.9
-Tested up to: 4.9
-Stable tag: 1.1.4
+Tested up to: 5.2
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://www.paypal.me/zenopopovici/
@@ -60,6 +60,9 @@ You'll have to do it yourself. Help [translate this plugin](https://translate.wo
 1. Plugin in action
 
 == Changelog ==
+
+= 1.1.5 =
+- Compatibility with future WP version.
 
 = 1.1.4 =
 - Fix for undefined variable.
