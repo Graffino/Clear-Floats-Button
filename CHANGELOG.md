@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.6
+
+- Compatibility with future version of WP
+
 ## 1.1.5
 
 - Compatibility with future version of WP
