@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+- OOP rewrite by @jaredyork
+
 ## 1.1.6
 
 - Compatibility with future version of WP
