@@ -1,7 +1,4 @@
 (function() {
-  // Load plugin specific language pack
-  tinymce.PluginManager.requireLangPack('clear');
-
   tinymce.create('tinymce.plugins.Clear', {
     /**
      * Initializes the plugin, this will be executed after the plugin has been created.
@@ -90,7 +87,7 @@
         author : 'Graffino',
         authorurl : 'http://graffino.com',
         infourl : 'https://wordpress.org/plugins/clear-floats-button/',
-        version : "1.2.0"
+        version : "1.2.1"
       };
     }
   });

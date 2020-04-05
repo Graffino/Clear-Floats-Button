@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1
+
+- Remove unneeded translation strings. Fixes [Issue #12](https://github.com/Graffino/Clear-Floats-Button/issues/12)
+- Compatibility with future WP version.
+
 ## 1.2.0
 
 - OOP rewrite by @jaredyork
