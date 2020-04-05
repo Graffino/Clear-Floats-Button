@@ -3,7 +3,7 @@
 Plugin Name: Clear Floats Button
 Plugin URI: https://github.com/Graffino/clear-floats-button
 Description: Adds a clear floats button to TinyMCE
-Version: 1.2.0
+Version: 1.2.1
 Author: Graffino
 Author URI: http://graffino.com
 
