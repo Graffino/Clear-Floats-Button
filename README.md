@@ -15,6 +15,10 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.2.2
+
+- Compatibility with future WP version.
+
 ### 1.2.1
 
 - Remove unneeded translation strings. Fixes [Issue #12](https://github.com/Graffino/Clear-Floats-Button/issues/12)
