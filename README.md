@@ -1,5 +1,7 @@
 # Clear Floats Button
 
+![Clear Floats Button](https://github.com/Graffino/Clear-Floats-Button/blob/master/assets/banner-1544x500.png)
+
 Adds clear float button to TinyMCE Editor. Originally by [Miguel Ibero](https://wordpress.org/plugins/tinymce-clear-buttons/).
 
 ## Description
@@ -14,6 +16,10 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 4. Activate the plugin.
 
 ## Changelog
+
+### 1.2.3
+
+- Update assets.
 
 ### 1.2.2
 
