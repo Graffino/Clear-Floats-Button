@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.3
+
+- Update assets.
+
 ## 1.2.2
 
 - Compatibility with future WP version.
