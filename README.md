@@ -17,6 +17,10 @@ This plugin adds 1 button to [TinyMCE](http://tinymce.moxiecode.com/) to clear f
 
 ## Changelog
 
+### 1.2.4
+
+- Compatibility with future WP version.
+
 ### 1.2.3
 
 - Update assets.
