@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.5
+
+- Compatibility with current WP version.
+
 ## 1.2.4
 
 - Compatibility with future WP version.
