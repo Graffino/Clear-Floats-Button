@@ -87,7 +87,7 @@
         author : 'Graffino',
         authorurl : 'http://graffino.com',
         infourl : 'https://wordpress.org/plugins/clear-floats-button/',
-        version : "1.2.4"
+        version : "1.2.5"
       };
     }
   });
